@@ -1,5 +1,10 @@
 Learning OS10
 
+User:
+admin
+password:
+olifant
+
 Guided path: Becoming a Mobile Developer
 
 Modules:												Time estimation:		Done:
@@ -14,9 +19,9 @@ Modules:												Time estimation:		Done:
 9. Webinar: Troubleshooting Mobile Apps Performance 	(1 hour)
 
 Module 1: 												Content:				Done:
-a. Course Intro 										(text)					
-b. Platform Basics										(2 vids)
-c. Mobile Development Basics							(5 vids, 2 excs)
+a. Course Intro 										(text)					31/7/17
+b. Platform Basics										(2 vids)				31/7/17
+c. Mobile Development Basics							(5 vids, 2 excs)		31/7/17 (4 vids, 1 exc)
 d. Mobile Themes and Templates							(2 vids, 1 exc)
 e. Mobile Programming									(3 vids)
 f. UI Basics											(1 vid, 3 excs)
