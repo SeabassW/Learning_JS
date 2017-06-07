@@ -17,11 +17,12 @@ Codecademy.com: Then follow the Make a Website track to make your first little w
 Beginning JavaScript: Read Chapter 1 (Introduction to JavaScript and the Web) and Chapter 2 (Data Types and Variables).
 [Result]= 
 30/5/17: Finished Chapter 1
-31/5/17: Read Chapter. Solved exercises
+31/5/17: Read Chapter 2. Solved exercises
 ----
 
 Beginning JavaScript: Read Chapter 3 (Decisions, Loops, and Functions).
 [Result]=
+7/6/17: 
 ----
 
 Codecademy.com: Work through the JavaScript Track on Codecademy. Specifically, work through these sections: “Introduction to JavaScript,” “Functions,” “‘For’ Loops in JavaScript,” “‘While’ Loops in JavaScript,” and “Control Flow.”

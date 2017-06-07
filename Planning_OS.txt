@@ -24,7 +24,7 @@ b. Platform Basics										(2 vids)				31/5/17
 c. Mobile Development Basics							(5 vids, 2 excs)		31/5/17 (4 vids, 1 exc) rest on 6/6/17
 d. Mobile Themes and Templates							(2 vids, 1 exc)			6/6/17
 e. Mobile Programming									(3 vids)				6/6/17
-f. UI Basics											(1 vid, 3 excs)
+f. UI Basics											(1 vid, 3 excs)			7/6/17
 g. Mobile App Generation								(1 vid, 1 exc)
 h. Local Storage and Offline							(2 vids, 2 excs)
 i. Reusable Patterns									(2 vids, 2 excs)
