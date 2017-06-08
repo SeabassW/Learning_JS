@@ -22,7 +22,7 @@ Beginning JavaScript: Read Chapter 1 (Introduction to JavaScript and the Web) an
 
 Beginning JavaScript: Read Chapter 3 (Decisions, Loops, and Functions).
 [Result]=
-7/6/17: 
+7/6/17: Read and solved exercises chapter 3
 ----
 
 Codecademy.com: Work through the JavaScript Track on Codecademy. Specifically, work through these sections: “Introduction to JavaScript,” “Functions,” “‘For’ Loops in JavaScript,” “‘While’ Loops in JavaScript,” and “Control Flow.”
@@ -30,7 +30,7 @@ Codecademy.com: Work through the JavaScript Track on Codecademy. Specifically, w
 23/5/17: Completed till ...%
 ----
 
-Beginning JavaScript: Read Chapter 4 (Common Mistakes, Debugging, and Error Handling).
+Beginning JavaScript: Read Chapter 18 (Common Mistakes, Debugging, and Error Handling) and Chapter 4 (Functions and Scope).
 [Result]=
 ----
 
@@ -50,11 +50,11 @@ Codecademy.com: Work through the last three sections of the Codecademy JavaScrip
 [Result]=
 ----
 
-Beginning JavaScript: Read Chapter 6 (Programming the Browser).
+Beginning JavaScript: Read Chapter 8 (Programming the Browser) and Chapter 6 (String Manipulation).
 [Result]=
 ----
 
-Beginning JavaScript: Read Chapter 15 (JavaScript Frameworks), and stop just after you complete this section: “Digging Deeper Into jQuery”.
+Beginning JavaScript: Read Chapter 16 (jQuery) and Chapter 9 (DOM Scripting).
 [Result]=
 ----
 
