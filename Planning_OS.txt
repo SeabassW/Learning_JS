@@ -27,7 +27,7 @@ e. Mobile Programming									(3 vids)				6/6/17
 f. UI Basics											(1 vid, 3 excs)			7/6/17
 g. Mobile App Generation								(1 vid, 1 exc)			8/6/17
 h. Local Storage and Offline							(2 vids, 2 excs)		8/6/17 
-i. Reusable Patterns									(2 vids, 2 excs) 
+i. Reusable Patterns									(2 vids, 2 excs) 		9/6/17 (2 vids, 1 exc done, 1 till part 5.)
 j. Charts												(1 vid, 1 exc)
 k. Plugins												(1 vid, 1 exc)
 l. Data Synchronization 								(1 vid, 1 exc)
