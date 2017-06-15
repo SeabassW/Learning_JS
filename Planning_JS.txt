@@ -27,7 +27,8 @@ Beginning JavaScript: Read Chapter 3 (Decisions, Loops, and Functions).
 
 Codecademy.com: Work through the JavaScript Track on Codecademy. Specifically, work through these sections: “Introduction to JavaScript,” “Functions,” “‘For’ Loops in JavaScript,” “‘While’ Loops in JavaScript,” and “Control Flow.”
 [Result]=
-23/5/17: Completed till Introduction -- Libraries
+23/5/17: Completed till Variables
+15/6/17: Completed till Scope
 ----
 
 Beginning JavaScript: Read Chapter 18 (Common Mistakes, Debugging, and Error Handling) and Chapter 4 (Functions and Scope).
