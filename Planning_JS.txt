@@ -29,6 +29,7 @@ Codecademy.com: Work through the JavaScript Track on Codecademy. Specifically, w
 [Result]=
 23/5/17: Completed till Variables
 15/6/17: Completed till Scope
+16/6/17: Fully completed course
 ----
 
 Beginning JavaScript: Read Chapter 18 (Common Mistakes, Debugging, and Error Handling) and Chapter 4 (Functions and Scope).
