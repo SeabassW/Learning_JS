@@ -33,7 +33,8 @@ Codecademy.com: Work through the JavaScript Track on Codecademy. Specifically, w
 ----
 
 Beginning JavaScript: Read Chapter 18 (Common Mistakes, Debugging, and Error Handling) and Chapter 4 (Functions and Scope).
-[Result]=
+[Result]= 
+19/6/17: Read Chapter 18 and solved exercises
 ----
 
 \\\\\
