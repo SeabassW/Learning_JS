@@ -35,6 +35,7 @@ Codecademy.com: Work through the JavaScript Track on Codecademy. Specifically, w
 Beginning JavaScript: Read Chapter 18 (Common Mistakes, Debugging, and Error Handling) and Chapter 4 (Functions and Scope).
 [Result]= 
 19/6/17: Read Chapter 18 and solved exercises
+20/6/17: Read Chapter 4 and solved exercises
 ----
 
 \\\\\
@@ -43,6 +44,12 @@ Part 2: Learn JavaScript Objects, the Browser Object Model (BOM), and Events; Le
 
 Beginning JavaScript: Read Chapter 5 (JavaScript — An Object- Based Language).
 [Result]=
+20/6/17: Read Chapter 5. Exercises still to do
+1. Using the Date type, calculate the date 12 months from now and write this into a web page. 
+2. Obtain a list of names from the user, storing each name entered in an array. Keep getting another name until the user enters nothing.
+	Sort hte names in ascending order and than write them out to the page, with each name on its own line
+3. ch5_example8.html uses a function to create objects using literal notation. Modify this example to use the Person data type
+
 ----
 
 JavaScriptIsSexy.com: Read my article, JavaScript Objects in Detail
