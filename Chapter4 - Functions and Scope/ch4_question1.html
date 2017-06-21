@@ -5,19 +5,14 @@
 </head>
 <body>
 	<script>
-    
-        var timesTable = parseInt(prompt("Pick a number: ", ""));
-        
-        if (Number.isNaN(timesTable)) {
-            return timesTable = parseInt(prompt("Don't be cheecky. Pick a number: ", ""));
-        }
-        
         function tableConstruct(timesTable, start, end) {
             for (; start <= end; start++) {
                 document.write(start + " * " + timesTable + " = " + start * timesTable + "<br/>");
             }
         }
-        tableConstruct(timesTable, 2, 9);
+        
+        
+        tableConstruct(12, 7, 9);
 	</script>
 </body>
 </html>

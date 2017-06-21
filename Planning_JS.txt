@@ -45,15 +45,11 @@ Part 2: Learn JavaScript Objects, the Browser Object Model (BOM), and Events; Le
 Beginning JavaScript: Read Chapter 5 (JavaScript — An Object- Based Language).
 [Result]=
 20/6/17: Read Chapter 5. Exercises still to do
-1. Using the Date type, calculate the date 12 months from now and write this into a web page. 
-2. Obtain a list of names from the user, storing each name entered in an array. Keep getting another name until the user enters nothing.
-	Sort hte names in ascending order and than write them out to the page, with each name on its own line
-3. ch5_example8.html uses a function to create objects using literal notation. Modify this example to use the Person data type
-
+21/6/17: Exercises Chapter 5 solved.
 ----
 
 JavaScriptIsSexy.com: Read my article, JavaScript Objects in Detail
-[Result]=
+[Result]= Read
 ----
 
 Codecademy.com: Work through the last three sections of the Codecademy JavaScript track: “Data Structures,” “Objects 1,” and “Objects 2.”

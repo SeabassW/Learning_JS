@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 5: Question 2</title>
+</head>
+<body>
+    <script>
+        var names = [];
+        var inputName;
+        
+        while ((inputName = prompt("Enter a name: ", "")) != "") {
+            names.push(inputName);
+        }
+        
+        names.sort();
+
+        for (counter = 0; counter <= names.length - 1; counter++) {
+            if (names[counter] !== "") {
+                document.write(names[counter] + "<br/>");
+            }
+        }
+        
+        /*
+        different way: 
+        var namesList = names.join("<br/>");
+        document.write(namesList);
+        */
+
+
+        document.write("GREAT SUCCESS!");
+        
+    </script>
+</body>
+</html>
