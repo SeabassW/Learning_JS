@@ -31,5 +31,5 @@ i. Reusable Patterns									(2 vids, 2 excs) 		9/6/17 (2 vids, 1 exc done, 1 ti
 j. Charts												(1 vid, 1 exc)			12/6/17
 k. Plugins												(1 vid, 1 exc)			12/6/17
 l. Data Synchronization 								(1 vid, 1 exc)			12/6/17
-m. Web Development										(2 excs)
-n. Final Project (Toon lite as project)					(1 exc; 6 hours)
+m. Web Development										(2 excs)				skip
+n. Final Project (Toon lite as project)					(1 exc; 6 hours)		start: 04/07/17; Done till: assignment 4
