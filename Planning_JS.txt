@@ -55,6 +55,7 @@ JavaScriptIsSexy.com: Read my article, JavaScript Objects in Detail
 Codecademy.com: Work through the last three sections of the Codecademy JavaScript track: “Data Structures,” “Objects 1,” and “Objects 2.”
 [Result]= 
 26/6/17: Done Data Structures
+3/7/17: Done Objects 1
 ----
 
 Beginning JavaScript: Read Chapter 8 (Programming the Browser) and Chapter 6 (String Manipulation).
