@@ -56,6 +56,7 @@ Codecademy.com: Work through the last three sections of the Codecademy JavaScrip
 [Result]= 
 26/6/17: Done Data Structures
 3/7/17: Done Objects 1
+7/7/17: Done Objects 2
 ----
 
 Beginning JavaScript: Read Chapter 8 (Programming the Browser) and Chapter 6 (String Manipulation).
