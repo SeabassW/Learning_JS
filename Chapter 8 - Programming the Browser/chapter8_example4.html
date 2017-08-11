@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 8, Example 4</title>
+</head>
+<body>
+<script>
+    function geoSucces(position) {
+        var coords = position.coords;
+        var latitude = coords.latitude;
+        var longitude = coords.longitude;
+        
+        var message = "You're at " + latitude + ", " + longitude;
+        
+        alert(message);
+    }
+    
+    function geoError(errorObj) {
+        alert(errorObj.message);
+    }
+    
+    if (typeof navigator.geolocation != "undefined") {
+        navigator.geolocation.getCurrentPosition(geoSucces, geoError);
+    } else {
+        alert("This page uses geolocation and your browser doesnt support it");
+    }
+</script>
+
+
+</body>
+</html>

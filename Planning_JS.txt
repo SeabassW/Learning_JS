@@ -60,7 +60,8 @@ Codecademy.com: Work through the last three sections of the Codecademy JavaScrip
 ----
 
 Beginning JavaScript: Read Chapter 8 (Programming the Browser) and Chapter 6 (String Manipulation).
-[Result]=
+[Result]= 
+11/8/17: Done Chapter 6 and 8
 ----
 
 Beginning JavaScript: Read Chapter 16 (jQuery) and Chapter 9 (DOM Scripting).
