@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 6, Exercise 3</title>
+</head>
+<body>
+<script>
+    var myString = "shit no fuck dog cat tits fuck fucky afuckinga asshole blow";
+    var myRegExp = /(\b\w*shit\w*\b)|(\b\w*fuck\w*\b)|(\bass\w*\b)/gi;
+    myString = myString.replace(myRegExp, "***");
+    
+    document.write(myString);
+</script>
+
+</body>
+</html>
