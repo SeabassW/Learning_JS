@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 10, Example 3</title>
+</head>
+<body>
+<a id="someLink" href="somepage.html">Click Me</a>
+<script>
+    function linkClick() {
+        alert("This link is going nowhere");
+        return false;
+    }
+    
+    document.getElementById("someLink").onclick = linkClick;
+</script>
+
+</body>
+</html>

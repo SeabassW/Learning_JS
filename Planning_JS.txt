@@ -73,7 +73,7 @@ Moving away from JSisSexy schedule. Work through rest of Beginning JS book.
 
 ---
 
-Chapter 10: Events							Done:
+Chapter 10: Events							Done till page 298 [14/8/17]
 
 Chapter 11: HTML Forms						Done:
 
