@@ -99,4 +99,8 @@ Codecademy.com: Work through the entire jQuery Track on Codecademy.
 
 \\\\\
 
-Part 3: TBD
+Do project to increase skills.
+
+[short] JS + CSS 					--> Quiz JSisSexy 
+[long] Outsystems + CSS + API 		--> PokeDex in OS (use OS to make version 1)
+[very long] JavaScript + CSS + API 	--> PokeDex in JS (improved version)
