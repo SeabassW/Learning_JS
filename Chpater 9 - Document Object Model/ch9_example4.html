@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 9, Example 4</title>
+    <style>                                                             /* best place for CSS information, the style sheet */
+        #divAdvert {
+            font: 12pt courier;   
+            font-style: italic;         
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="divAdvert">
+        Here is an advertisement
+    </div>
+    
+    <script>
+        var divAdvert = document.getElementById("divAdvert");
+        //divAdvert.style.fontStyle = "italic";                         //avoid putting style information in JavaScript 
+        //divAdvert.style.textDecoration = "underline";                 //put it in stylesheet, where CSS information belongs
+    </script>
+
+</body>
+</html>

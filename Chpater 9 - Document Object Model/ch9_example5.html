@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 9, Example 5</title>
+    <style>
+        #divAdvert {
+            font-family: 12pt arial;
+            font-style: italic                          /* if set to just -font- it sets certain elements to default values. Use more specific elements */
+        }
+        
+        .new-style {
+            text-decoration: underline;                 
+            color: red;
+            text-align: right;
+            font-weight: 600;               
+        }
+    </style>
+</head>
+<body>
+    <div id="divAdvert">
+    Here is an advertisement
+    </div>
+    
+    <script>
+        var divAdvert = document.getElementById("divAdvert");
+        divAdvert.className = "new-style";
+    </script>
+
+
+</body>
+</html>

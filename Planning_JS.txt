@@ -65,8 +65,33 @@ Beginning JavaScript: Read Chapter 8 (Programming the Browser) and Chapter 6 (St
 ----
 
 Beginning JavaScript: Read Chapter 16 (jQuery) and Chapter 9 (DOM Scripting).
-[Result]=
+[Result]= 
+14/8/17: Done Chapter 9 
 ----
+
+Moving away from JSisSexy schedule. Work through rest of Beginning JS book.
+
+---
+
+Chapter 10: Events							Done:
+
+Chapter 11: HTML Forms						Done:
+
+Read posts on JSisSexy in week 5 and 6.		Done:
+
+Chapter 12: JSON							Done:
+
+Chapter 13: Data Storage					Done:
+
+Chapter 14: AJAX							Done:
+
+Chapter 15: HTML5 Media						Done:
+
+Chapter 16: jQuery							Done:
+
+Chapter 17: Other JS libraries				Done:
+
+Review once again Chapter 18: Debugging		Done:
 
 Codecademy.com: Work through the entire jQuery Track on Codecademy.
 [Result]=

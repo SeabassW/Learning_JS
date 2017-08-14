@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 9, Exercise 1</title>
+</head>
+<body>
+<script>
+    var newTableElement = document.createElement("table");
+    var newTableRowElement1 = document.createElement("tr");
+    var newTableRowElement2 = document.createElement("tr");
+    var newTableRowElement3 = document.createElement("tr");
+    var newTableCellElement1 = document.createElement("td");
+    var newTableCellElement2 = document.createElement("td");
+    var newTableCellElement3 = document.createElement("td");
+    var newTableCellElement4 = document.createElement("td");
+    var newTableCellElement5 = document.createElement("td");
+    var newTableCellElement6 = document.createElement("td");
+    var newTableCellElement7 = document.createElement("td");
+    var newTableCellElement8 = document.createElement("td");
+    var newTableCellElement9 = document.createElement("td");
+    
+    var CellText1 = document.createTextNode("Car");
+    var CellText2 = document.createTextNode("Top Speed");
+    var CellText3 = document.createTextNode("Price");
+    var CellText4 = document.createTextNode("Chevrolet");
+    var CellText5 = document.createTextNode("120 mph");
+    var CellText6 = document.createTextNode("$10,000");
+    var CellText7 = document.createTextNode("Pontiac");
+    var CellText8 = document.createTextNode("140 mph");
+    var CellText9 = document.createTextNode("$20,000");
+        
+    var docNavigate = document.body;
+    
+    docNavigate.appendChild(newTableElement);                //adds table element
+    docNavigate = docNavigate.lastChild;                     //moves to table element
+    docNavigate.appendChild(newTableRowElement1);             //adds table row element 1
+    docNavigate = docNavigate.firstChild;                    //moves to table row element 1
+    docNavigate.appendChild(newTableCellElement1);            //adds table cell element 1
+    docNavigate.appendChild(newTableCellElement2);            //adds table cell element 2
+    docNavigate.appendChild(newTableCellElement3);           // adds table cell element 3
+    docNavigate = docNavigate.firstChild;                   //moves to cell element 1
+    docNavigate.appendChild(CellText1);                     //adds text to cell element 1
+    docNavigate = docNavigate.nextSibling;                  //moves to next cell element
+    docNavigate.appendChild(CellText2);                     //adds text to cell element 2
+    docNavigate = docNavigate.nextSibling;                  //moves to next cell element
+    docNavigate.appendChild(CellText3);                     //adds text to cell element 3
+    docNavigate = docNavigate.parentNode;                    //returns to table row element 1
+    docNavigate = docNavigate.parentNode;                    //returns to table element
+    
+    docNavigate.appendChild(newTableRowElement2);            //adds table row element 2
+    docNavigate = docNavigate.lastChild;                    //moves to table row element 2
+    docNavigate.appendChild(newTableCellElement4);            //adds table cell element 4
+    docNavigate.appendChild(newTableCellElement5);            //adds table cell element 5
+    docNavigate.appendChild(newTableCellElement6);           // adds table cell element 6
+    docNavigate = docNavigate.firstChild;                   //moves to cell element 4
+    docNavigate.appendChild(CellText4);                     //adds text to cell element 4
+    docNavigate = docNavigate.nextSibling;                  //moves to next cell element
+    docNavigate.appendChild(CellText5);                     //adds text to cell element 5
+    docNavigate = docNavigate.nextSibling;                  //moves to next cell element
+    docNavigate.appendChild(CellText6);                     //adds text to cell element 6
+    docNavigate = docNavigate.parentNode;                    //returns to table row element 2
+    docNavigate = docNavigate.parentNode;                    //returns to table element    
+    
+    docNavigate.appendChild(newTableRowElement3);            //adds table row element 3
+    docNavigate = docNavigate.lastChild;                    //moves to table row element 3
+    docNavigate.appendChild(newTableCellElement7);            //adds table cell element 7
+    docNavigate.appendChild(newTableCellElement8);            //adds table cell element 8
+    docNavigate.appendChild(newTableCellElement9);           // adds table cell element 9
+    docNavigate = docNavigate.firstChild;                   //moves to cell element 7
+    docNavigate.appendChild(CellText7);                     //adds text to cell element 7
+    docNavigate = docNavigate.nextSibling;                  //moves to next cell element
+    docNavigate.appendChild(CellText8);                     //adds text to cell element 8
+    docNavigate = docNavigate.nextSibling;                  //moves to next cell element
+    docNavigate.appendChild(CellText9);                     //adds text to cell element 9
+</script>
+
+
+</body>
+</html>
