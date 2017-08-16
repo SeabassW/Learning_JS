@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 11, Example 3</title>
+</head>
+<body>
+    <form action="" name="form1">
+        <input type="button" name="myButton" value="Mouse goes up" />
+    </form>
+    
+    <script>
+        var myButton = document.form1.myButton;
+        
+        function myButtonMouseUp() {
+            myButton.value = "Mouse Goes Up";
+        }
+        
+        function myButtonMouseDown() {
+            myButton.value = "Mouse Goes Down";
+        }
+        
+        myButton.addEventListener("mousedown", myButtonMouseDown);
+        myButton.addEventListener("mouseup", myButtonMouseUp);
+    </script>
+
+</body>
+</html>
