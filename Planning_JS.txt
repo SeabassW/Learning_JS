@@ -73,9 +73,9 @@ Moving away from JSisSexy schedule. Work through rest of Beginning JS book.
 
 ---
 
-Chapter 10: Events							Done till page 298 [14/8/17]. Finieshed [15/8/17]
+Chapter 10: Events							Done till page 298 [14/8/17]. Finished [15/8/17]
 
-Chapter 11: HTML Forms						Done till page 350 [16/8/17].
+Chapter 11: HTML Forms						Done till page 350 [16/8/17]. Finished [21/8/17]
 
 Read posts on JSisSexy in week 5 and 6.		Done:
 
@@ -99,8 +99,8 @@ Codecademy.com: Work through the entire jQuery Track on Codecademy.
 
 \\\\\
 
-Do project to increase skills.
+Do projects to increase skills. 
 
-[short] JS + CSS 					--> Quiz JSisSexy 
-[long] Outsystems + CSS + API 		--> PokeDex in OS (use OS to make version 1)
-[very long] JavaScript + CSS + API 	--> PokeDex in JS (improved version)
+[short] JS + CSS 					--> Make a website with a Quiz (example on javascriptisSexy.com link above)
+[long] Outsystems + CSS + API 		--> PokeDex in Outsytems (use OS to make version 1)
+[very long] JavaScript + CSS + API 	--> PokeDex in JavaScript (improved version)

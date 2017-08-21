@@ -19,11 +19,48 @@
             <option value="-480">San Francisco
             <option value="600">Sydney
         </select>
-    </form>
     <p>
         <input type="checkbox" id="chkDst" name="chkDst" />
+        <label for="chkDst">Adjust city time for Daylight Savings</label>
     </p>
-
+    </form>
+    
+    <script>
+        var myForm = document.form1;
+        
+        function updateTimeZone() {
+            var lstCity = myForm.lstCity;
+            var selectedOption = lstCity.options[lstCity.selectedIndex];
+            var offset = selectedOption.value;
+            var selectedCity = selectedOption.text;
+            
+            var dstAdjust = 0;
+            
+            if (myForm.chkDst.checked) {
+                dstAdjust = 60;
+            }
+            
+            updateOutput(selectedCity, offset, dstAdjust);
+        }
+        
+        function updateOutput(selectedCity, offset, dstAdjust) {
+            var now = new Date();
+            
+            document.getElementById("spanLocalTime").innerHTML = now.toLocaleString();
+            
+            now.setMinutes(now.getMinutes() + now.getTimezoneOffset() + parseInt(offset, 10) + dstAdjust);
+            
+            var resultsText = selectedCity + " time is " + now.toLocaleString();
+            
+            document.getElementById("divCityTime").innerHTML = resultsText;
+        }
+        
+        myForm.lstCity.addEventListener("change", updateTimeZone);
+        myForm.chkDst.addEventListener("click", updateTimeZone);
+        
+        updateTimeZone();
+    </script>
+    
 
 
 </body>
