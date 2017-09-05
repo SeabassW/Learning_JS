@@ -77,15 +77,15 @@ Chapter 10: Events							Done till page 298 [14/8/17]. Finished [15/8/17]
 
 Chapter 11: HTML Forms						Done till page 350 [16/8/17]. Finished [21/8/17]
 
-Read posts on JSisSexy in week 5 and 6.		Done:
+Read posts on JSisSexy in week 5 and 6.		Finished [21/8/17]
 
-Chapter 12: JSON							Done:
+Chapter 12: JSON							Finished [30/8/17]
 
-Chapter 13: Data Storage					Done:
+Chapter 13: Data Storage					Finished [1/9/17]
 
-Chapter 14: AJAX							Done:
+Chapter 14: AJAX							Finished [5/9/17]
 
-Chapter 15: HTML5 Media						Done:
+Chapter 15: HTML5 Media						Finished [5/9/17]
 
 Chapter 16: jQuery							Done:
 

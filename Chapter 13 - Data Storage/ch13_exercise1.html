@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 13: Exercise 1</title>
+</head>
+<body>
+    <h1>Welcome to this page</h1>
+    <div id="counter"></div>
+    
+    <script>
+        var pageViewCount = localStorage.getItem("pageViewCount");
+        var pageFirstVisited = localStorage.getItem("pageFirstVisited")
+        var now = new Date();
+        
+        if (pageViewCount == null) {
+            pageViewCount = 0;
+            pageFirstVisited = now.toUTCString();
+        }
+        
+        var oneMonth = new Date(pageFirstVisited);
+        oneMonth.setMonth(oneMonth.getMonth() + 1);
+        
+        if (now > oneMonth) {
+            pageViewCount = 0;
+            pageFirstVisited = now.toUTCString();
+        }
+        
+        pageViewCount = parseInt(pageViewCount, 10) + 1;
+        
+        localStorage.setItem("pageViewCount", pageViewCount);
+        localStorage.setItem("pageFirstVisited", pageFirstVisited);
+        
+        var output = "You've visitted this page " + pageViewCount + " times since " + pageFirstVisited;
+        
+        document.write(output);
+    </script>
+
+</body>
+</html>

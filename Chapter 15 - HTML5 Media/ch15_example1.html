@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 15: Example 1</title>
+</head>
+<body>
+    <div><button id="playbackController">Play</button></div>
+    <video id="bbbVideo">
+        <source src="Star_Wars_Episode_VII.mp4" />
+        <source src="Star_Wars_Episode_VII.webm" />
+    </video>
+
+    <script>
+        function playbackClick(e) {
+            var target = e.target;
+            var video = document.getElementById("bbbVideo")
+            
+            if (target.innerHTML == "Play") {
+                video.play();
+                target.innerHTML = "Pause";
+            } else {
+                video.pause();
+                target.innerHTML = "Play";
+            }
+        } 
+        
+        document.getElementById("playbackController").addEventListener("click", playbackClick);
+    </script>
+
+</body>
+</html>
