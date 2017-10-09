@@ -1,14 +1,28 @@
+var data;
 var pkmn;
-var sel;
+var sel1;
+var sel2;
 var button;
+//var listNames = [];
 
 function preload() {
-    dataP = loadJSON("pkmn.json");
+    data = loadJSON("pkmn.json");
+
+    
+    //console.log(data.source);
 }
 
 function setup() {
     createCanvas(400,200);
-    pkmn = dataP.pokemon;
+    pkmn = data.pokemon;
+    
+    /*
+    for (var i = 0; i < pkmn.length; i++) {
+        listNames.append(pkmn[i].name);
+    }
+    
+    //console.log(data.source);
+    
     
     textAlign(CENTER);
     background(235);
@@ -23,16 +37,16 @@ function setup() {
     
     sel2 = createSelect();
     sel2.position(200,50);
-    sel2.option('Ekans');
-    sel2.option('Growlithe');
+    sel2.option('Ivysaur');
+    sel2.option('Dewgong');
     sel2.changed(mySelectEvent);
     
     button = createButton("FIGHT!");
     button.position(320, 50);
-    button.mousePressed(changeBG);
+    button.mousePressed(fight);
     
+    */
     
-    /*
     
     
     for (var i = 0; i < pkmn.length; i++) {
@@ -151,17 +165,17 @@ function setup() {
                     createDiv("Unknown Type");
             }
         }
-    } */
-}
+    } 
+} 
 
+/*
 function mySelectEvent() {
     var item1 = sel1.value();
-    background(200);
-    textSize(32);
-    text(item1 + " vs " + item1, 175,150);
+    var item2 = sel2.value();
 }
 
-function changeBG() {
-    var val = random(255);
-    background(val);
-}
+function fight() {
+    textSize(32);
+    text(item1 + " vs " + item2, 175,150);
+} 
+*/
