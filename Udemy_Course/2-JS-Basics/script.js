@@ -86,7 +86,7 @@ if (isMarried) {
 */
 //////////////////////////////////////////////////////////
 // Lecture: Boolean logic and Switch
-
+/*
 var age = 26;
 
 if (age <= 19) {
@@ -113,8 +113,45 @@ switch (job) {
     default:
         console.log('John does nothing');
 }
+*/
 
 
+/////////////////////////////////////////////////////////////
+// Coding Challenge 1
+
+var heightFriend = 186;
+var ageFriend = 19;
+var heightJohn = 178;
+var ageJohn = 21;
+var heightOther = 166;
+var ageOther = 34;
+
+var resultFriend = heightFriend + 5 * ageFriend;
+var resultJohn = heightJohn + 5 * ageJohn;
+var resultOther = heightOther + 5 * ageOther;
+
+console.log(resultFriend);
+console.log(resultJohn);
+console.log(resultOther);
+
+switch (resultFriend | resultJohn | resultOther) {
+    case resultFriend > resultJohn && resultFriend > resultOther:
+        console.log('Friend wins!');
+        break;
+    case resultJohn > resultFriend && resultJohn > resultOther:
+        console.log('John wins!');
+        break;
+    case resultOther > resultFriend && resultOther > resultJohn:
+        console.log('Other wins!');
+        break;
+    case resultFriend === resultJohn && resultFriend === resultOther:
+        console.log('It\'s a tie!');
+        break;
+    default:
+        console.log('Whoaah! Why are you here?!');
+}
+
+// possible to use multiple parameters in switch? if not -> if/else
 
 
 
