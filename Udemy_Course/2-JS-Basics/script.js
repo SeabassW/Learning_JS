@@ -118,13 +118,13 @@ switch (job) {
 
 /////////////////////////////////////////////////////////////
 // Coding Challenge 1
-
-var heightFriend = 186;
+/*
+var heightFriend = 187;
 var ageFriend = 19;
-var heightJohn = 178;
-var ageJohn = 21;
+var heightJohn = 176;
+var ageJohn = 22;
 var heightOther = 166;
-var ageOther = 34;
+var ageOther = 54;
 
 var resultFriend = heightFriend + 5 * ageFriend;
 var resultJohn = heightJohn + 5 * ageJohn;
@@ -134,52 +134,96 @@ console.log(resultFriend);
 console.log(resultJohn);
 console.log(resultOther);
 
-switch (resultFriend | resultJohn | resultOther) {
-    case resultFriend > resultJohn && resultFriend > resultOther:
-        console.log('Friend wins!');
-        break;
-    case resultJohn > resultFriend && resultJohn > resultOther:
-        console.log('John wins!');
-        break;
-    case resultOther > resultFriend && resultOther > resultJohn:
-        console.log('Other wins!');
-        break;
-    case resultFriend === resultJohn && resultFriend === resultOther:
-        console.log('It\'s a tie!');
-        break;
-    default:
-        console.log('Whoaah! Why are you here?!');
+
+if (resultFriend === resultJohn || resultJohn === resultOther) {
+    console.log('It\'s a tie!');
+} else if (resultFriend > resultJohn && resultFriend > resultOther) {
+    console.log('Friend wins!');
+} else if (resultJohn > resultOther) {
+    console.log('John wins!');
+} else {
+    console.log('Other wins!');
+}
+*/
+
+/////////////////////////////////////////////////////////////
+// Lecture: Functions
+/*
+function calculateAge(yearOfBirth) {
+    var age = 2016 - yearOfBirth;
+    return age;
 }
 
-// possible to use multiple parameters in switch? if not -> if/else
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1969);
+var ageMary = calculateAge(1948);
 
 
+function yearsUntilRetire(name, yearOfBirth) {
+    var age = calculateAge(yearOfBirth); 
+    var retirement = 65 - age;
+    
+    if (retirement >= 0) {
+        console.log(name + ' has ' + retirement + ' years left till retirement');
+    } else {
+        console.log(name + ' has already retired ' + Math.abs(retirement) + ' years ago')
+    }
+}
 
 
+yearsUntilRetire('John', 1990);
+yearsUntilRetire('Mike', 1969);
+yearsUntilRetire('Mary', 1948);
+*/
+/////////////////////////////////////////////////////////////
+// Lecture: Statements and Expressions
+/*
+//Function Statement
+function someFun(par) {
+    //code
+}
 
+//Function Expression
+var someFun = function(par) {
+    //code
+}
 
+//Expressions
+3 + 4;
+var x = 3;
 
+//Statements
+if (x === 5) {
+    //do something
+}
+*/
+/////////////////////////////////////////////////////////////
+// Lecture: Arrays
+/*
+var names = ['John', 'Jane', 'Mark'];
+var years = new Array(1990, 1969, 1948);
 
+console.log(names);
+names[1] = 'Ben';
+console.log(names);
 
+var john = ['John', 'Smith', 1990, 'baker', false];
 
+john.push('Blue');
+john.unshift('Mr.')
+john.pop();
+john.shift();
 
+console.log(john);
 
+console.log(john.indexOf('Smith'));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if (john.indexOf('teacher') === -1) {
+    console.log('John is not a teacher');
+}
+*/
+/////////////////////////////////////////////////////////////
+// Lecture: Objects
 
 
 
