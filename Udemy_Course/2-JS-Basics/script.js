@@ -224,6 +224,150 @@ if (john.indexOf('teacher') === -1) {
 */
 /////////////////////////////////////////////////////////////
 // Lecture: Objects
+/*
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false
+};
+
+console.log(john);
+console.log(john.lastName);
+console.log(john['yearOfBirth']);
+
+var xyz = 'job';
+console.log(john[xyz]);
+
+john.lastName = 'Miller';
+john['job'] = 'programmer';
+
+console.log(john);
+
+var jane = new Object();
+jane.name = 'Jane';
+jane.lastName = 'Smith';
+jane['yearOfBirth'] = 1969;
+jane['job'] = 'retired';
+jane.isMarried = true;
+
+console.log(jane);
+
+*/
+/////////////////////////////////////////////////////////////
+// Lecture: Objects and Methods
+/* v1.0
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge: function() {
+        return 2016 - this.yearOfBirth;
+    }
+};
+
+console.log(john.family[2]);
+console.log(john.calculateAge());
+
+var age = john.calculateAge();
+john.age = age;
+
+console.log(john);
+*/
+/*
+// v2.0
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false,
+    family: ['Jane', 'Mike', 'Bob'],
+    calculateAge: function() {
+        this.age = 2016 - this.yearOfBirth;
+    }
+};
+
+john.calculateAge();
+console.log(john);
+
+var mike = {
+    name: 'Mike',
+    lastName: 'Smith',
+    yearOfBirth: 1950,
+    job: 'builder',
+    isMarried: false,
+    family: ['Jane', 'John', 'Bob'],
+    calculateAge: function() {
+        this.age = 2016 - this.yearOfBirth;
+    }
+};
+
+mike.calculateAge();
+console.log(mike);
+*/
+
+/////////////////////////////////////////////////////////////
+// Lecture: Loops
+
+// for-loops
+for (var i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+var names = ['John', 'Jane', 'Mark', 'Mary','Bob'];
+
+for (var i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+for (var i = names.length-1; i >= 0; i--) {
+    console.log(names[i]);
+}
+
+// while-loops
+
+var i = 0;
+while(i < names.length) {
+    console.log(names[i]);
+    i++;
+}
+
+for (var i = 1; i <= 5; i++) {
+        
+    if (i === 3) {
+        continue;
+    }
+    
+    console.log(i);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
