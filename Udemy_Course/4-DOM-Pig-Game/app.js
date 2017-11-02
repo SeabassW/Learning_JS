@@ -63,7 +63,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
             nextPlayer();
             
         //3. Update the round score IF the rolled number was NOT a 1
-        } else if (dice1 > 1 & dice2 > 1) {
+        } else if (dice1 > 1 && dice2 > 1) {
 
             //Add score
             roundScore += dice1 + dice2;
@@ -88,13 +88,17 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         //Update UI
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
         
-        var maxScore = document.getElementById('max-score').value;
+        var maxScore
+        var input = document.getElementById('max-score').value;
+        
+        input ?  maxScore = input : maxScore = 100;
         
         //Check if player won the game
         if (scores[activePlayer] >= maxScore) {
             //Declare winnner
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
-            document.querySelector('.dice').style.display = 'none';
+            document.getElementById('dice-1').style.display = 'none';
+            document.getElementById('dice-2').style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
             document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
             
@@ -126,7 +130,8 @@ function nextPlayer() {
     document.querySelector('.player-0-panel').classList.toggle('active');
     document.querySelector('.player-1-panel').classList.toggle('active');
 
-    document.querySelector('.dice').style.display = 'none';
+    document.getElementById('dice-1').style.display = 'none';
+    document.getElementById('dice-2').style.display = 'none';
 }
 
 function init() {
@@ -136,7 +141,8 @@ function init() {
 
     gamePlaying = true;
     
-    document.querySelector('.dice').style.display = 'none';
+    document.getElementById(' 1').style.display = 'none';
+    document.getElementById('dice-2').style.display = 'none';
     
     document.getElementById('score-0').textContent = '0';
     document.getElementById('score-1').textContent = '0';
