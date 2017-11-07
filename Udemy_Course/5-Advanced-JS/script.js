@@ -120,7 +120,7 @@ Functions are also objects in JavaScript, they are First Class Functions, so:
 - We can return a function from a function
 
 */
-
+/*
 var years = [1990,1965,1937,2005,1998];
 
 function arrayCalc(arr, fn) {
@@ -160,17 +160,93 @@ console.log(fullAges);
 console.log(rates);
 
 // Better practice to create small functions instead of one big function
+*/
+
+///////////////////////////////////////////////////////////
+// Lecture: Functions returning functions
+/*
+function interviewQuestion(job) {
+    if (job === 'designer') {
+        return function(name) {
+            console.log(name + ", can you please explain what UX design is?");
+        }
+    } else if (job === 'teacher') {
+        return function(name) {
+            console.log('What subject do you teach, ' + name + '?');
+        }
+    } else {
+        return function(name) {
+            console.log('Hello ' + name + ', what do you do?');
+        }
+    }
+}
+
+//These variables are functions
+var teacherQuestion = interviewQuestion('teacher');
+var designerQuestion = interviewQuestion('designer');
+
+teacherQuestion('John');
+designerQuestion('Jane');
+
+interviewQuestion('builder')('Mark');
+
+*/
 
 
 ///////////////////////////////////////////////////////////
-// Lecture: 
+// Lecture: IIFE -- Immediately Invoked Function Expressions
+
+/*
+function game() {
+    var score = Math.random() * 10;
+    console.log(score >= 5);
+}
+
+game();
+
+//IIFE variant:
+(function () {
+    var score = Math.random() * 10;
+    console.log(score >= 5);
+})();
+
+//Function is wrapped to trick engine that the function is not a declaration but an expression. 
+//Do this by wrapping the function in parentheses.
+
+(function (goodLuck) {
+    var score = Math.random() * 10;
+    console.log(score >= 5 - goodLuck)
+})(5);
+*/
+
+///////////////////////////////////////////////////////////
+// Lecture: Closures
+
+/*
+//Closures Summary: 
+An inner function always has access to the variables and parameters of its outer function,
+even after the outer function has returned.
+*/
+
+function retirement(retirementAge) {
+    var a = ' years left until retirement';
+    
+    return function (yearOfBirth) {
+        var age = 2016 - yearOfBirth;
+        console.log((retirementAge - age) + a);
+    }
+}
 
 
+var retirementUS = retirement(66);
+//retirement(66)(1990);
+var retirementGermany = retirement(65);
+var retirementIceland = retirement(67);
 
-
-
-
-
+retirementUS(1990);
+retirementGermany(1990);
+retirementIceland(1990);
+ 
 
 
 
