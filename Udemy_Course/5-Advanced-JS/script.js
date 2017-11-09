@@ -306,13 +306,13 @@ var emily = {
 
 john.presentation('formal', 'morning');
 
-//Method borrowing
+//Method borrowing, call
 john.presentation.call(emily, 'friendly', 'afternoon')
 
 //Apply
 john.presentation.apply(emily, ['friendly', 'evening']);
 
-
+//Bind
 
 
 
