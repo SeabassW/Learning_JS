@@ -227,7 +227,7 @@ game();
 An inner function always has access to the variables and parameters of its outer function,
 even after the outer function has returned.
 */
-
+/*
 function retirement(retirementAge) {
     var a = ' years left until retirement';
     
@@ -246,7 +246,81 @@ var retirementIceland = retirement(67);
 retirementUS(1990);
 retirementGermany(1990);
 retirementIceland(1990);
- 
+*/ 
+/*
+//Rewrite this function with closures
+function interviewQuestion(job) {
+    if (job === 'designer') {
+        return function(name) {
+            console.log(name + ", can you please explain what UX design is?");
+        }
+    } else if (job === 'teacher') {
+        return function(name) {
+            console.log('What subject do you teach, ' + name + '?');
+        }
+    } else {
+        return function(name) {
+            console.log('Hello ' + name + ', what do you do?');
+        }
+    }
+}
+*/
+/*
+function interviewQuestion(job) {
+    return function(name) {
+        if (job === 'designer') {
+            console.log(name + ', can you please explain what UX design is?');
+        } else if (job === 'teacher') {
+            console.log('What subject do you teach, ' + name + '?');
+        } else {
+            console.log('Hello ' + name + ', what do you do?');
+        }
+    }
+}
+
+interviewQuestion('baker')('Mike');
+*/
+///////////////////////////////////////////////////////////
+// Lecture: Bind, call and apply
+
+var john = {
+    name: 'John',
+    age: 26,
+    job: 'teacher',
+    presentation: function(style, timeOfDay) {
+        if (style === 'formal') {
+            console.log('Good ' + timeOfDay + ', ladies and gentleman! I\'m ' + this.name + ', I\'m a ' + this.job + ' and I\'m ' + this.age + ' years old.');
+        } else if (style === 'friendly') {
+            console.log('Hey! What\'s up? I\'m ' + this.name + ', I\'m a ' + this.job + ' and I\'m ' + this.age + ' years old. Have a nice ' + timeOfDay + '.');
+        }
+    }
+}
+
+var emily = {
+    name: 'Emily',
+    age: 30,
+    job: 'designer',
+    
+}
+
+
+john.presentation('formal', 'morning');
+
+//Method borrowing
+john.presentation.call(emily, 'friendly', 'afternoon')
+
+//Apply
+john.presentation.apply(emily, ['friendly', 'evening']);
+
+
+
+
+
+
+
+
+
+
 
 
 
