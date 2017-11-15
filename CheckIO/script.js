@@ -54,3 +54,23 @@ function digitsMultip(data) {
         .filter(a => a != "0")
         .reduce((a, b) => parseInt(a) * parseInt(b) ));
 }
+
+// Own Solution Count Inversion
+
+// When array is reversed, return 10
+
+function countInversion(sequence) {
+    var result = 0;
+    
+    for (var i = 0; i < sequence.length - 1; i++) {
+        var max = 0;
+        
+        if (sequence[i] <= sequence [i+1]) {
+            max = sequence[i+1];    
+        } else {
+            result = i+1;
+            break;
+        }
+    }
+    return result;
+}
