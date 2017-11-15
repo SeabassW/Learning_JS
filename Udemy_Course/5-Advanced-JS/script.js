@@ -282,7 +282,7 @@ interviewQuestion('baker')('Mike');
 */
 ///////////////////////////////////////////////////////////
 // Lecture: Bind, call and apply
-
+/*
 var john = {
     name: 'John',
     age: 26,
@@ -350,10 +350,10 @@ var fullJapan = arrayCalc(ages, isFullAge.bind(this, 20));
 console.log(ages);
 console.log(fullJapan);
 
+*/
 
 
-
-
+////CheckIO
 
 
 
