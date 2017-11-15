@@ -298,9 +298,8 @@ var john = {
 
 var emily = {
     name: 'Emily',
-    age: 30,
-    job: 'designer',
-    
+    age: 35,
+    job: 'designer'
 }
 
 
@@ -312,20 +311,44 @@ john.presentation.call(emily, 'friendly', 'afternoon')
 //Apply
 john.presentation.apply(emily, ['friendly', 'evening']);
 
-//Bind
+//Bind, uses currying. Is a technique in which we create a function based on another function but with preset parameters.
+var johnFriendly = john.presentation.bind(john, 'friendly');
+
+johnFriendly('night');
+johnFriendly('noon');
+
+var emilyFormal = john.presentation.bind(emily, 'formal');
+
+emilyFormal('morning');
 
 
 
+var years = [1990,1965,1937,2005,1998];
 
+function arrayCalc(arr, fn) {
+    var arrRes = [];
+    
+    for (var i = 0; i < arr.length; i++) {
+        arrRes.push(fn(arr[i]));
+    }
+    
+    return arrRes;
+}
 
+//Callback function
+function calculateAge(el) {
+    return 2016 - el;
+}
 
+function isFullAge(limit, el) {
+    return el >= limit;
+}
 
-
-
-
-
-
-
+//Use bind to pass a function with 1 parameter as that is what calculateAge expects
+var ages = arrayCalc(years, calculateAge);
+var fullJapan = arrayCalc(ages, isFullAge.bind(this, 20));
+console.log(ages);
+console.log(fullJapan);
 
 
 
