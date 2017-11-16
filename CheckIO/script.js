@@ -57,20 +57,120 @@ function digitsMultip(data) {
 
 // Own Solution Count Inversion
 
-// When array is reversed, return 10
+// Not solved
 
 function countInversion(sequence) {
     var result = 0;
+    var reversed = true;
+    var max = sequence[0];
     
-    for (var i = 0; i < sequence.length - 1; i++) {
-        var max = 0;
+    if (sequence[0] <= sequence[1] || sequence.length === 2) {
+        reversed = false;
         
-        if (sequence[i] <= sequence [i+1]) {
-            max = sequence[i+1];    
-        } else {
-            result = i+1;
-            break;
+        for (var i = 0; i < sequence.length - 1; i++) {
+
+            if (max < sequence[i+1]) {
+                max = sequence[i+1];    
+            } else {
+                result += 1;
+            }
         }
+    } else {
+        for (var i = 0; i < sequence.length - 1; i++) {
+
+            if (max < sequence[i+1]) {
+                reversed = false;
+                max = sequence[i+1];
+            } else {
+                result +=1
+            }
+        }
+    }
+    
+    if (reversed) {
+        return 10;
+    } else {
+        return result;
+    }
+}
+
+// Own solution Common Words
+
+function commonWords(first, second) {
+    const firstList = first.split(",");
+    const secondList = second.split(",");
+    var result = [];
+    
+    for (var i = 0; i < secondList.length; i++) {
+        for (var j = 0; j < firstList.length; j++) {
+            if (firstList[j] === secondList[i]) {
+                result.push(firstList[j]);
+            }
+        }
+    }
+    
+    return result.sort().join(",");
+}
+
+// Other solution Common Words
+
+function commonWords(first, second) {
+    return first.split(",")
+        .filter
+        (x => second
+            .split(",")
+            .includes(x)
+        )
+        .sort()
+        .join(",");
+}
+
+// Own solution Absolute sorting
+
+function absoluteSorting(numbers){
+    var result = [];
+    var args = [...numbers];
+    
+    for (var i = 0; args.length >= 1; i += 0) {
+        var min = args[0];
+        var indexMin = 0;
+        
+        for (var j = 1; j < args.length; j++) {
+            if (Math.abs(args[j]) < Math.abs(min)) {
+                min = args[j];
+                indexMin = j;
+            }
+        }
+        args.splice(indexMin, 1);
+        result.push(min);
     }
     return result;
 }
+
+// Other solutions Absolute Sorting
+
+function absoluteSorting(numbers){
+    return numbers.sort((a, b) => Math.abs(a) - Math.abs(b))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
