@@ -154,6 +154,111 @@ function absoluteSorting(numbers){
 }
 
 
+// Own Solution Median
+
+function median(data) {
+    var sorted = sortArray(data);
+    var sortedLength = sorted.length;
+    
+    return sortedLength % 2 !== 0 ? sorted[Math.floor(sortedLength/2)] 
+                                        : (sorted[sortedLength/2 - 1] + sorted[sortedLength/2]) / 2;
+
+}
+
+function sortArray(data) {
+    var args = data;
+    var result = [];
+    
+    for (var i = 0; args.length >= 1; i += 0) {
+        var min = args[0];
+        var indexMin = 0;
+        
+        for (var j = 1; j < args.length; j++) {
+            if (args[j] < min) {
+                min = args[j];
+                indexMin = j;
+            }
+        }
+        args.splice(indexMin, 1);
+        result.push(min);
+    }
+    return result;
+}
+
+// Own Solution Moore Neighbourhood. 
+// Doesnt work when row and col are part of matrix....
+
+function countNeighbours(data, row, col) {
+    let counter = 0;
+    const sizeRow = data[0].length;
+    const sizeCol = data[1].length;
+    
+    for (var i = row - 1; i <= row + 1; i++) {
+        if (i < 0 || i >= sizeRow) {
+            continue;
+        } else {
+            for (var j = col - 1; j <= col + 1; j++) {
+                if (j < 0 || j >= sizeCol || (i === row && j === col)) {
+                    continue;
+                }else if (data[i][j] === 1) {
+                    counter += 1;
+                }
+            }
+        
+        }
+    }
+    return counter;
+}
+
+//Works
+
+function countNeighbours(data, row, col){
+    var s = 0;
+    var adj = [[-1, 1], [-1, 0], [-1, -1], [0, 1], [0, -1], [1, 1], [1, 0], [1, -1]];
+    for (let a of adj) {
+        let x = row + a[0];
+        let y = col + a[1];
+        
+      if (data[x] && data[x][y]) {s++;}
+    }
+    return s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
