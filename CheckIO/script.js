@@ -288,7 +288,29 @@ function weakPoint(matrix){
              colTotals.findIndex(val => val===colMin) ];
 }
 
+// Own solution Most Wanted Letter
 
+function mostWanted(data) {
+    let dataParsed = data.replace(/[\W\d_]/g, "");
+
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    const lowerCase = dataParsed.toLowerCase();
+    let countLetters = [];
+
+    for (let i of alphabet) {
+        let count = 0;
+        for (let j of lowerCase) {
+            if (j === i) {
+                count += 1;
+            }
+        }
+        countLetters.push(count);
+    }
+
+    const indexMaxValue = countLetters.indexOf(Math.max(...countLetters))
+
+    return alphabet.charAt(indexMaxValue);
+}
 
 
 
