@@ -313,12 +313,110 @@ function mostWanted(data) {
 }
 
 
+// Own solution Long Repeat
 
+function longRepeat(line) {
+    let maxCount = 1;
 
+    if (line) {
+        let count = 1;
 
+        for (var el = 0; el < line.length - 1; el++) {
+            let x = line.charAt(el);
+            let y = line.charAt(el+1);
 
+            if (x === y) {
+                count += 1;
 
+                if (count > maxCount) {
+                    maxCount = count;
+                }
+            } else {
+                count = 1;
+            }
+        }
+    } else {
+        maxCount = 0;
+    }
+    return maxCount;
+}
 
+// Own solution Roman Numerals
+
+function romanNumerals(number) {
+    let result = []
+
+    while (number > 0) {
+        while (number > 899) {
+            if (Math.floor(number/1000) >= 1) {
+                const quotient = Math.floor(number/1000);
+                result.push('M'.repeat(quotient));
+                number -= quotient * 1000;
+            } else if (Math.floor(number/900) >= 1) {
+                result.push('CM');
+                number -= 900;
+            }
+        }
+        while (number > 399) {
+            if (Math.floor(number/500) >= 1) {
+                const quotient = Math.floor(number/500);
+                result.push('D'.repeat(quotient));
+                number -= quotient * 500;
+            } else if (Math.floor(number/400) >= 1) {
+                result.push('CD');
+                number -= 400;
+            }
+        }
+
+        while (number > 89) {
+            if (Math.floor(number/100) >= 1) {
+                const quotient = Math.floor(number/100);
+                result.push('C'.repeat(quotient));
+                number -= quotient * 100;
+            } else if (Math.floor(number/90) >= 1) {
+                result.push('XC');
+                number -= 90;
+            }
+        }
+
+        while (number > 39) {
+            if (Math.floor(number/50) >= 1) {
+                const quotient = Math.floor(number/50);
+                result.push('L'.repeat(quotient));
+                number -= quotient * 50;
+            } else if (Math.floor(number/40) >= 1) {
+                result.push('XL');
+                number -= 40;
+            }
+        }
+
+        while (number > 8) {
+            if (Math.floor(number/10) >= 1) {
+                const quotient = Math.floor(number/10);
+                result.push('X'.repeat(quotient));
+                number -= quotient * 10;
+            } else if (Math.floor(number/9) >= 1) {
+                result.push('IX');
+                number -= 9;
+            }
+        }
+
+        while (number > 3) {
+            if (Math.floor(number/5) >= 1) {
+                const quotient = Math.floor(number/5);
+                result.push('V'.repeat(quotient));
+                number -= quotient * 5;
+            } else if (Math.floor(number/4) >= 1) {
+                result.push('IV');
+                number -= 4;
+            }
+        }
+
+        result.push('I'.repeat(number));
+        number -= number;
+    }
+    return result.join("");
+}
 
 
 
