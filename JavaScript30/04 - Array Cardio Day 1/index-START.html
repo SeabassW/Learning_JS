@@ -31,15 +31,53 @@
 
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
+    // Filter always returns the same amount of elements or less
+      
+      const fifteen = inventors.filter(function(inventor) {
+          if(inventor.year >= 1500 && inventor.year < 1600) {
+              return true; //keep it!
+          }
+      });
+      
+      const fifteenShort = inventors.filter(inventor => inventor.year >= 1500 && inventor.year < 1600);
+      
+      //console.table(fifteenShort); //displays table of results!
 
     // Array.prototype.map()
     // 2. Give us an array of the inventors' first and last names
+    // Map always returns the same amount of elements
+      
+      const names = inventors.map(function(inventor) {
+          return inventor.first + " " + inventor.last
+      });
+      
+      //Used template strings
+      const namesShort = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+      
+      //console.log(namesShort);
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
+      
+      const bubbleSort = inventors.sort(function(firstPerson, secondPerson) {
+          if (firstPerson.year > secondPerson.year) {
+              return 1;
+          } else {
+              return -1;
+          }
+      })
+      
+      const invSort = inventors.sort((firstPerson, secondPerson) => firstPerson.year > secondPerson.year? 1 : -1);
+      
+      //console.table(invSort);
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
+      
+      const invReduce = inventors.reduce(function() {
+          
+      })
+      
 
     // 5. Sort the inventors by years lived
 
@@ -54,6 +92,20 @@
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
   </script>
 </body>
 </html>
