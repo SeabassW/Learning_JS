@@ -18,28 +18,69 @@
     }
 
     // Regular
+    console.log('Hello');
 
     // Interpolated
+    console.log('Hello, I am a %s string!', '+poo');
 
     // Styled
+    //console.log('%c I am some great text', 'font-size: 16px; background: red; text-shadow: 10px 10px 0 blue');
+    // put %c in front of what you want ot style
 
     // warning!
+    console.warn('OH NOOOOO!!!!');
 
     // Error :|
+    console.error('Too bad...')
 
     // Info
+    console.info('Crocodiles eat 3-4 people per year');
 
     // Testing
+    console.assert(1 === 1, 'That is wrong!')
+    console.assert(1 === 2, 'That is also wrong!')
 
     // clearing
+    //console.clear();
 
     // Viewing DOM Elements
+    const p = document.querySelector('p');
 
-    // Grouping together
+    console.log(p);
+    console.dir(p);
+
+    // Grouping together. AWESOME!
+    dogs.forEach(dog => {
+      console.group(`${dog.name}`);
+      //console.groupCollapsed(`${dog.name}`);
+
+      console.log(`This is ${dog.name}`);
+      console.log(`${dog.name} is ${dog.age} years old`);
+      console.log(`${dog.name} is ${dog.age * 7} human years old`);
+
+      console.groupEnd(`${dog.name}`);
+    })
+
 
     // counting
+    console.count('Dude');
+    console.count('Dude');
+    console.count('The');
+    console.count('Dude');
+    console.count('The');
+    console.count('Dude');
 
     // timing
+    console.time('fetching data');
+    fetch('https://api.github.com/users/wesbos')
+      .then(data => data.json())
+      .then(data => {
+        console.timeEnd('fetching data');
+        console.log(data);
+      })
+
+    //table
+    console.table(dogs)
 
   </script>
 </body>
