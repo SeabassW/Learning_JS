@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,6 +100,68 @@
   </div>
 
 <script>
+  /*
+  MY TRY:
+
+  const keyDown = document.addEventListener('keydown', startHoldKey);
+  const keyUp = document.addEventListener('keyup', endHoldKey);
+  const click = document.addEventListener('click', selectBoxes);
+  const boxes = document.getElementsByClassName('item');
+  let keyHold = false
+
+  function startHoldKey(key) {
+    if (key.keyCode === 16) {
+      keyHold = true;
+      console.log("keyHold: " + keyHold);
+    }
+  }
+
+  function endHoldKey(key) {
+    if (key.keyCode === 16) {
+      keyHold = false;
+      console.log("keyHold: " + keyHold);
+    }
+  }
+
+  function selectBoxes(e) {
+    console.log(boxes);
+
+    if (keyHold) {
+
+    }
+  }
+  */
+
+  //Wes Bos Solution:
+
+  const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
+
+  let lastChecked;
+
+  function handleCheck(e) {
+
+    let inBetween = false;
+
+    // Check if they had the shift key down
+	  // AND check that they are checking it
+    if(e.shiftKey && this.checked) {
+      checkboxes.forEach(checkbox => {
+        if (checkbox === this || checkbox === lastChecked) {
+          inBetween = !inBetween;
+        }
+
+        if (inBetween) {
+          checkbox.checked = true;
+        }
+      });
+
+    }
+    lastChecked = this;
+  }
+
+  checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+
+
 </script>
 </body>
 </html>
