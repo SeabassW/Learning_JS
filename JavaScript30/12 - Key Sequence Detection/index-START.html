@@ -7,6 +7,51 @@
 </head>
 <body>
 <script>
+
+  // My solution
+  const konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+  let keyCombo = [];
+
+  window.addEventListener('keyup', listenCombo);
+
+  function listenCombo(e) {
+    console.log('key: ' + e.key + ' keycode: ' + e.keyCode);
+
+    if (e.keyCode != konamiCode[keyCombo.length]) {
+      keyCombo = [];
+    } else {
+      keyCombo.push(e.keyCode);
+    }
+
+    console.log(keyCombo);
+
+    if (keyCombo.length===konamiCode.length && keyCombo.every((v,i) => v === konamiCode[i])) {
+      console.log('YOU ARE A GOD!!!');
+      cornify_add();
+    }
+
+  }
+
+  // Wes Bos solution
+  /*
+  const pressed = [];
+  const secretCode = 'wesbos';
+
+  window.addEventListener('keyup', (e) => {
+    console.log(e.key);
+    pressed.push(e.key);
+
+    // Only allow for an array the length of secretCode. When too long, drops letters from front of array
+    pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+
+    if (pressed.join('').includes(secretCode)) {
+      console.log('DING DING!');
+      cornify_add();
+    }
+    console.log(pressed);
+  })
+  */
+
 </script>
 </body>
 </html>

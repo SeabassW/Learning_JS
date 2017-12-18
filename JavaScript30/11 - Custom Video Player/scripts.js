@@ -13,7 +13,7 @@ const buttonFS = player.querySelector('.fullscreen');
 
 /* Build our functions */
 
-function togglePlay() {
+function togglePlay() {d
     if (video.paused) {
         video.play();
     } else {
